@@ -4,8 +4,8 @@ public class CarroTeste {
 
 	public static void main(String[] args) {
 		
-		Carro civic = new Civic();
-		Carro ferrari = new Ferrari();
+		Carro civic = new Civic(150.0);
+		Carro ferrari = new Ferrari(200.0);
 		
 		System.out.println(civic.velocidadeAtual);
 		System.out.println(ferrari.velocidadeAtual);
@@ -23,8 +23,54 @@ public class CarroTeste {
 		civic.frear();
 		civic.frear();
 		
-		System.out.println(civic.velocidadeAtual);
-		System.out.println(ferrari.velocidadeAtual);
+		System.out.println(civic);
+		System.out.println(ferrari);
+		
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
 		
 		System.out.println(civic);
 		System.out.println(ferrari);
