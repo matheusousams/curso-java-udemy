@@ -5,6 +5,11 @@ public class Jogador {
 	int life=100;
 	int x, y;
 	
+	Jogador(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
 	boolean atacar(Jogador adversario) {
 		
 		int deltaX = Math.abs(x - adversario.x);

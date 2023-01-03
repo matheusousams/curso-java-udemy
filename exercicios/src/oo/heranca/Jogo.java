@@ -8,9 +8,9 @@ public class Jogo {
 		villan.x = 10;
 		villan.y = 10;
 		
-		Jogador hero = new Heroi();
-		hero.x = 10;
-		hero.y = 11;
+		Jogador hero = new Heroi(10,11);
+//		hero.x = 10;
+//		hero.y = 11;
 		
 //		jogador.andar(Direcao.NORTE);
 //		jogador.andar(Direcao.LESTE);
