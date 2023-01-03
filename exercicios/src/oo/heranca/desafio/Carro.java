@@ -16,5 +16,8 @@ public class Carro {
 		return velocidadeAtual;
 	}
 	
+	public String toString() {
+		return "A velocidade atual é " + velocidadeAtual + "Km/h.";
+	}
 	
 }

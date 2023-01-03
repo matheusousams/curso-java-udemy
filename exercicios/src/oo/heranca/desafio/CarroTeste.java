@@ -25,5 +25,9 @@ public class CarroTeste {
 		
 		System.out.println(civic.velocidadeAtual);
 		System.out.println(ferrari.velocidadeAtual);
+		
+		System.out.println(civic);
+		System.out.println(ferrari);
+		
 	}
 }
