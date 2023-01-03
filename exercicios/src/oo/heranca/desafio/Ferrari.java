@@ -2,18 +2,20 @@ package oo.heranca.desafio;
 
 public class Ferrari extends Carro{
 
-	Ferrari(double velocidadeMaxima){
-		super(velocidadeMaxima);
+	Ferrari(){
+		this(340);
 	}
 	
-	@Override
-	double acelerar() {
-		if(velocidadeAtual + 15 > VELOCIDADE_MAXIMA) {
-			velocidadeAtual=VELOCIDADE_MAXIMA;
-			return velocidadeAtual;
-		} else { 
-			velocidadeAtual+=15;
-			return velocidadeAtual;
-		}
+	Ferrari(double velocidadeMaxima){
+		super(velocidadeMaxima);
+		delta = 15;
 	}
+	
+//	@Override
+//	double acelerar() {
+//		velocidadeAtual+=15;
+//		return velocidadeAtual;
+//		//super.acelerar();
+//	}
+	
 }
