@@ -3,14 +3,14 @@ package oo.heranca.desafio;
 public class Carro {
 
 	final double VELOCIDADE_MAXIMA;
-	double velocidadeAtual;
+	public double velocidadeAtual;
 	double delta = 5;
 	
 	Carro(double velocidadeMaxima) {
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 	
-	double acelerar() {
+	public double acelerar() {
 		if(velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
 			velocidadeAtual=VELOCIDADE_MAXIMA;
 			return velocidadeAtual;
@@ -20,7 +20,7 @@ public class Carro {
 		}
 	}
 	
-	double frear() {
+	public double frear() {
 		if(velocidadeAtual>=5) {
 			velocidadeAtual-=5;
 		}

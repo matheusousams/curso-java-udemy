@@ -6,7 +6,7 @@ public class Ferrari extends Carro{
 		this(340);
 	}
 	
-	Ferrari(double velocidadeMaxima){
+	public Ferrari(double velocidadeMaxima){
 		super(velocidadeMaxima);
 		delta = 15;
 	}

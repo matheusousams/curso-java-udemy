@@ -6,7 +6,7 @@ public class Civic extends Carro{
 		super(272);
 	}
 	
-	Civic(double velocidadeMaxima) {
+	public Civic(double velocidadeMaxima) {
 		super(velocidadeMaxima);
 	}
 	

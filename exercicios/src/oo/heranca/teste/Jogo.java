@@ -1,4 +1,9 @@
-package oo.heranca;
+package oo.heranca.teste;
+
+import oo.heranca.Direcao;
+import oo.heranca.Heroi;
+import oo.heranca.Jogador;
+import oo.heranca.Vilao;
 
 public class Jogo {
 
@@ -32,6 +37,8 @@ public class Jogo {
 		
 		System.out.println("Vida do monstro: " + villan.life);
 		System.out.println("Vida do herói: " + hero.life);
+		
+		villan.andar(Direcao.NORTE);
 		
 	}
 }
