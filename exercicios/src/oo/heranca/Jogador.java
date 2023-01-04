@@ -5,7 +5,7 @@ public class Jogador {
 	public int life=100;
 	public int x, y;
 	
-	Jogador(int x, int y) {
+	protected Jogador(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

@@ -2,11 +2,11 @@ package oo.heranca.desafio;
 
 public class Carro {
 
-	final double VELOCIDADE_MAXIMA;
+	public final double VELOCIDADE_MAXIMA;
 	public double velocidadeAtual;
-	double delta = 5;
+	protected double delta = 5;
 	
-	Carro(double velocidadeMaxima) {
+	protected Carro(double velocidadeMaxima) {
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 	

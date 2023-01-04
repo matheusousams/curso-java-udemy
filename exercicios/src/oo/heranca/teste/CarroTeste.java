@@ -10,9 +10,11 @@ public class CarroTeste {
 		
 		Carro civic = new Civic(150.0);
 		Carro ferrari = new Ferrari(200.0);
+		Carro civic2 = new Ferrari();
 		
 		System.out.println(civic.velocidadeAtual);
 		System.out.println(ferrari.velocidadeAtual);
+		System.out.println(civic2.velocidadeAtual);
 		
 		civic.acelerar();
 		ferrari.acelerar();
