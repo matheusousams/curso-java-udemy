@@ -12,5 +12,7 @@ public class CalculoTeste2 {
 		calc = (x, y) -> x * y;
 		System.out.println(calc.executar(1, 2));
 		
+		System.out.println(calc.legal());
+		System.out.println(Calculo.muitoLegal());
 	}
 }
