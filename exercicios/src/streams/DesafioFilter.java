@@ -12,8 +12,9 @@ public class DesafioFilter {
 		CandidatoDesafio candidato1 = new CandidatoDesafio("João", 18, true);
 		CandidatoDesafio candidato2 = new CandidatoDesafio("Maria", 19, false);
 		CandidatoDesafio candidato3 = new CandidatoDesafio("Ana", 17, true);
+		CandidatoDesafio candidato4 = new CandidatoDesafio("Enzo", 30, true);
 		
-		List<CandidatoDesafio> candidatos = Arrays.asList(candidato1, candidato2, candidato3);
+		List<CandidatoDesafio> candidatos = Arrays.asList(candidato1, candidato2, candidato3, candidato4);
 		
 		Predicate<CandidatoDesafio> temIdadeMinima = d -> d.idade >= 18;
 		Predicate<CandidatoDesafio> pagouMatricula = d -> d.pagouMatricula == true;
