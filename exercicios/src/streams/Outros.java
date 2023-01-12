@@ -25,7 +25,7 @@ public class Outros {
 		alunos.stream().distinct().skip(2).limit(2).forEach(System.out::println);
 		
 		System.out.println("\ntakeWhile");
-		alunos.stream().distinct().skip(2).takeWhile(a -> a.nota >= 7).forEach(System.out::println);
+//		alunos.stream().distinct().skip(2).takeWhile(a -> a.nota >= 7).forEach(System.out::println);
 		//takeWhile disponível a partir do java 9
 		
 	}
