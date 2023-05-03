@@ -11,7 +11,7 @@ import br.com.cod3r.cm.excecao.ExplosaoException;
 
 public class CampoTeste {
 
-	private Campo campo = new Campo(3, 3);
+	private Campo campo;
 
 	@BeforeEach
 	void iniciarCampo() {
@@ -85,7 +85,8 @@ public class CampoTeste {
 	
 	@Test
 	void testeAbrirNaoMinadoMarcado() {
-		assertTrue(campo.abrir());
+		campo.alternaMarcacao();
+		assertFalse(campo.abrir());
 	}
 	
 	@Test
