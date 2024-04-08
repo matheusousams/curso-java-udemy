@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import br.com.cod3r.cm.excecao.ExplosaoException;
+
 public class Tabuleiro {
 
 	private int rows;
@@ -24,8 +26,13 @@ public class Tabuleiro {
 	}
 
 	public void abrir(int row, int column) {
-		campos.parallelStream().filter(c -> c.getRow() == row && c.getColumn() == column)
-			  .findFirst().ifPresent(c -> c.abrir());
+		try {
+			campos.parallelStream().filter(c -> c.getRow() == row && c.getColumn() == column)
+				.findFirst().ifPresent(c -> c.abrir());
+		} catch (ExplosaoException e) {
+			campos.forEach(c -> c.setAberto(true));
+			throw e;
+		}
 	}
 	
 	public void alternaMarcacao(int row, int column) {
