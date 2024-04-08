@@ -8,6 +8,10 @@ public class Aplicacao {
 		
 		Tabuleiro tabuleiro = new Tabuleiro(6,6,6);
 		
+		tabuleiro.abrir(3, 3);
+		tabuleiro.alternaMarcacao(4, 4);
+		tabuleiro.alternaMarcacao(4, 5);
+
 		System.out.println(tabuleiro);
 	}
 }
