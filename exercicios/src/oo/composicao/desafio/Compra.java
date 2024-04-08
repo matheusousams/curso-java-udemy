@@ -3,8 +3,6 @@ package oo.composicao.desafio;
 import java.util.ArrayList;
 import java.util.List;
 
-import oo.composicao.desafio.Item;
-
 public class Compra {
 
 	final List<Item> itens = new ArrayList<>();
