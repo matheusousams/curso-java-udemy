@@ -79,8 +79,19 @@ public class Tabuleiro {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		
+		sb.append("  ");
+		for (int column = 0; column < columns; column++) {
+			sb.append(" ");
+			sb.append(column);
+			sb.append(" ");
+		}
+
+		sb.append("\n");
+
 		int i = 0;
 		for (int row = 0; row < rows; row++) {
+			sb.append(row);
+			sb.append(" ");
 			for (int column = 0; column < columns; column++) {
 				sb.append(" ");
 				sb.append(campos.get(i));
