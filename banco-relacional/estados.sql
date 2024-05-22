@@ -4,7 +4,7 @@ INSERT INTO estados
 VALUES
     ('Ceará', 'CE', 'Nordeste', 8.84),
     ('Bahia', 'BA', 'Nordeste', 15.34),
-    ('Brasília', 'DF', 'Centro-Oeste', 2.82);
+    ('Brasília', 'DF', 'Centro-Oeste', 2.82),
     ('Espírito Santo', 'ES', 'Sudeste', 4.02),
     ('Goiás', 'GO', 'Centro-Oeste', 6.78),
     ('Maranhao', 'MA', 'Nordeste', 7.00),
