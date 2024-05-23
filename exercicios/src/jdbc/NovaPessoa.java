@@ -17,6 +17,7 @@ public class NovaPessoa {
 
         String sql = "INSERT INTO pessoas (nome) VALUES (?)";
         PreparedStatement stmt = conexao.prepareStatement(sql);
+
         stmt.setString(1, nome);
 
         stmt.execute();
