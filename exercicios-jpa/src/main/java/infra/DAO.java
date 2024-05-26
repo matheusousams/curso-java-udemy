@@ -36,7 +36,7 @@ public class DAO<E> {
     }
 
     public DAO<E> fecharT() {
-        em.getTransaction().begin();
+        em.getTransaction().commit();
         return this;
     }
 
