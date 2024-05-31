@@ -14,13 +14,19 @@ public class ProdutoModel {
 
     private String nome;
 
+    private double preco;
+
+    private int desconto;
+
     public ProdutoModel() {
 
     }
 
-    public ProdutoModel(String nome) {
+    public ProdutoModel(String nome, double preco, int desconto) {
         super();
         this.nome = nome;
+        this.preco = preco;
+        this.desconto = desconto;
     }
 
     public int getId() {
@@ -37,6 +43,22 @@ public class ProdutoModel {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public double getPreco() {
+        return this.preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getDesconto() {
+        return this.desconto;
+    }
+
+    public void setDesconto(int desconto) {
+        this.desconto = desconto;
     }
 
 }
