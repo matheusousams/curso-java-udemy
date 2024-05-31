@@ -23,4 +23,8 @@ public class ProdutoController {
         return produto;
     }
 
+    private Iterable<ProdutoModel> obterProdutos() {
+        return produtoRepository.findAll();
+    }
+
 }
