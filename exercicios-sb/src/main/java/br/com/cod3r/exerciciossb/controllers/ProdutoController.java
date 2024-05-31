@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cod3r.exerciciossb.model.entities.ProdutoModel;
 import br.com.cod3r.exerciciossb.model.repositories.ProdutoRepository;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/produtos")
@@ -17,7 +18,7 @@ public class ProdutoController {
     private ProdutoRepository produtoRepository;
 
     @PostMapping
-    public @ResponseBody ProdutoModel novoProduto(ProdutoModel produto) {
+    public @ResponseBody ProdutoModel novoProduto(@Valid ProdutoModel produto) {
         produtoRepository.save(produto);
         return produto;
     }
