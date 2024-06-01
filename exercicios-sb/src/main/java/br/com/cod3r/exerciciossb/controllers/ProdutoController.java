@@ -38,13 +38,18 @@ public class ProdutoController {
         return produtoRepository.findAll();
     }
 
+    @GetMapping(path = "/nome/{parteNome}")
+    public Iterable<ProdutoModel> obterProdutosPorNome(@PathVariable String parteNome) {
+        return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
+    }
+
     /*
-     * @GetMapping(path = "/pagina/{numeroPagina}")
+     * @GetMapping(path = "/pagina/{numeroPagina}/qtdePagina")
      * public Iterable<ProdutoModel> obterProdutosPorPagina(@PathVariable int
-     * numeroPagina, @PathVariable int qtdPagina) {
-     * if (qtdPagina >= 5)
-     * qtdPagina = 5;
-     * Pageable page = PageRequest.of(numeroPagina, qtdPagina);
+     * numeroPagina, @PathVariable int qtdePagina) {
+     * if (qtdePagina >= 5)
+     * qtdePagina = 5;
+     * Pageable page = PageRequest.of(numeroPagina, qtdePagina);
      * return produtoRepository.findAll(page);
      * }
      */
